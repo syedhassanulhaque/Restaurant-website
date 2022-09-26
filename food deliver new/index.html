@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khana Khazana</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/phone.css">
+</head>
+<body>
+    <nav>
+      
+        <div class="box">
+         
+            <div class="navbar ">
+            <span>
+                <img src="logo.JPG" alt="" class="logo">
+            </span>
+                <ul class='content' id='content'>
+               
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#clients">Our Clients</a></li>
+                <li><a href="#contact">Contact us</a></li>
+                </ul>
+            </div>
+            <div id="icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    
+    </nav>
+    <section  id="home">
+          <div>
+               
+            <h1>Khana Khazana</h1>
+            <p>If gluttony is a sin, welcome to hell
+                <p>Beyond the boundaries of taste</p> 
+                  <p>Feed your belly with something special today!</p></p>
+                  <div><button>Order Now</button></div>
+       
+          </div>
+    </section>
+    <section id="services">
+        <div>
+            <h1>Our Services</h1>
+        </div>
+        <div class="box">
+            <div class="item">
+                <h2>Food Ordering</h2>
+                <img src="/img/1.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti soluta iure nesciunt ut dolorem, autem at consectetur reiciendis maxime quasi dignissimos totam assumenda facilis ducimus veniam voluptatibus sapiente distinctio, </p>
+            </div>
+            <div class="item">
+                <h2>Food Catering</h2>
+                <img src="/img/2.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti soluta iure nesciunt ut dolorem, autem at consectetur reiciendis maxime quasi dignissimos totam assumenda facilis ducimus veniam voluptatibus sapiente distinctio, </p>
+          
+            </div>
+            <div class="item">
+                <h2>Bulk Ordering</h2>
+                <img src="img/3.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti soluta iure nesciunt ut dolorem, autem at consectetur reiciendis maxime quasi dignissimos totam assumenda facilis ducimus veniam voluptatibus sapiente distinctio,</p>
+          
+            </div>
+        </div>
+    </section>
+    <section id="clients">
+        <h1>Our Clients</h1>
+        <div>
+            <img src="/img/logo1.png" alt=""><img src="/img/logo2.png" alt=""><img src="/img/logo3.png" alt=""><img src="/img/logo4.png" alt=""><img src="/img/logo2.png" alt="">
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <div>
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text">
+                <label for="email">Email:</label>
+                <input type="email">
+                <label for="textarea">Message:</label>
+                <textarea name="message" id="" cols="30" rows="10">Write us...</textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <script>
+
+        icon=document.getElementById('icon');
+        content=document.getElementById('content');
+
+        var hamburger=false;
+        icon.onclick=run;
+
+        function run() {
+            if (hamburger==false) {
+                hamburger=true;
+                content.style.height='300px';
+                icon.style.border='0px';
+                icon.children[0].style='width:70% ; transform:rotate(45deg) ; transform-origin: 0% 0%;';
+                icon.children[1].style='width:0%';
+                icon.children[2].style='width:70% ; transform:rotate(-45deg) ; transform-origin: 0% 0%;';
+            }
+
+            else if(hamburger==true){
+                hamburger=false;
+                content.style.height='0px';
+                icon.style.border='2px solid white';
+                icon.children[0].style='width:60% ; transform:rotate(0deg) ; transform-origin: 0% 0%;';
+                icon.children[1].style='width:60%';
+                icon.children[2].style='width:60% ; transform:rotate(0deg) ; transform-origin: 0% 0%;';
+            }
+        }
+    </script>
+</body>
+</html>
