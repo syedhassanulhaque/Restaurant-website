@@ -172,7 +172,7 @@
     }
     #clients::before{
         content: '';
-        background: url('/back1.jpg');
+        background: url('../back1.jpg');
         background-size: cover;
         position: absolute;
         top: 0;
