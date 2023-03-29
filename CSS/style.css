@@ -99,7 +99,7 @@ h2{
 /* Home page */
 #home::before{
     content: '';
-    background: url('/back5.jpg');
+    background: url('./back5.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -164,7 +164,7 @@ h2{
     height: 100vh;
     position: absolute;
     top: 100vh;
-    background: url('/back2.jpg');
+    background: url('./back2.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -206,7 +206,7 @@ h2{
 /* Our Clients */
 #clients::before{
     content: '';
-    background: url('/back1.jpg');
+    background: url('./back1.jpg');
     background-attachment: fixed;
     background-size: cover;
     position: absolute;
@@ -242,7 +242,7 @@ h2{
 /* Contact us */
 #contact::before{
     content: '';
-    background: url('/contact.jpg');
+    background: url('./contact.jpg');
     background-attachment: fixed;
     background-size: cover; 
     background-repeat: no-repeat;
