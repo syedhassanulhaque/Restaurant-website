@@ -1,0 +1,331 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* background: rgba(0, 0, 255, 0.315) !important; */
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+}
+/* Utility CSS */
+h1{
+    font-size: 3rem;
+    color: rgb(239, 239, 243);
+    text-shadow: grey;
+    offset: 1px 2px;
+}
+h2{
+    font-size: 1.8rem;
+    color: rgb(21, 22, 20)
+  
+}
+/* Navbar */
+.navbar::before{
+    content: "";
+    background-color: black; 
+    width: 100vw;
+    height: 3.5rem;
+    opacity: .8;
+    position: fixed;
+    top: 0;
+    left: 0;
+   z-index: 10;
+}
+.navbar{
+    display: flex;
+    justify-content:space-evenly ;
+    /* border: 2px solid rgb(212, 129, 129); */
+    /* background-color: black;  */
+    width: 100vw;
+  
+
+}
+.navbar .logo{
+    position: fixed;
+    left: 20px;
+    top: 10px;
+    width :40x;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 30;
+}
+.navbar .content{
+    /* width: 100%; */
+    position: fixed;
+    right: 10px;
+    z-index: 100;
+}
+
+.navbar>ul{
+    display: flex;
+    list-style-type: none;
+    z-index: 1;
+    top:10px;
+}
+.navbar>ul>li{
+    margin:auto .5rem;
+    transition: all 1s;
+}
+.navbar>ul>li:hover{
+    background: wheat;
+    padding: 0.6rem 1rem;
+    border-radius: 0.6rem;
+    backface-visibility: visible;
+
+    cursor: pointer;
+}
+.navbar>ul>li>a{
+    text-decoration:none ;
+    padding: 0.6rem 1rem;
+    color: rgba(248, 248, 247, 0.952);
+    font-size: 1.3rem;
+    transition: all 1s;
+}
+.navbar>ul>li:hover a:hover{
+    color: rgb(31, 30, 5);
+}
+
+.navbar>ul>li>a:active{
+    color: mediumslateblue;
+}
+/* .navbar ul li img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+} */
+
+/* Home page */
+#home::before{
+    content: '';
+    background: url('/back5.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+     width: 100vw;
+     height: 100vh;
+     z-index: -2;
+    filter: brightness(80%);
+}
+#home{
+    position: absolute;
+   top: 0;
+   left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid red; */
+}
+#home>div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home>div>p{
+    font-size: 1.3rem;
+    color: ghostwhite;
+    z-index: 1;
+
+}
+#home>div>div>button{
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    
+    background-color: black;
+    width: 180px;
+    border: 2px groove wheat;
+    z-index: 1;
+    color: white;
+    transition: all .4s;
+}
+#home>div>div>button:hover{
+    transform: scale(1.08);
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+}
+/* Services Section */
+#services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border:2px solid rgb(129, 76, 32); */
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 100vh;
+    background: url('/back2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#services>.box{
+    display: flex;
+   
+    
+}
+#services h1{
+    font-size: 3rem;
+    color: whitesmoke;
+}
+.item{
+    border:2px solid rgb(214, 224, 72);
+    display: flex;
+    margin: 3rem;
+    padding: 1rem;
+    border-radius: 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(212, 210, 189, 0.678);
+    transition: all .7s;
+}
+.item:hover{
+    background-color: rgb(235, 228, 168);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.item>img{
+    display: block;
+    width: 7rem;
+    height: 7rem;
+}
+
+
+/* Our Clients */
+#clients::before{
+    content: '';
+    background: url('/back1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    top: o;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: .9;
+    filter: brightness(70%);
+    z-index: -1;
+}
+
+#clients{
+    position: absolute;
+    top: 200vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+#clients>h1{
+    margin-top: 20px;
+}
+#clients>div>img{
+    margin-top: 3rem;
+   width: 160px;
+   height: 160px;
+}
+/* Contact us */
+#contact::before{
+    content: '';
+    background: url('/contact.jpg');
+    background-attachment: fixed;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+#contact{
+    position: absolute;
+    top: 300vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+#contact>h1{
+    font-size: 3rem;
+    color: white;
+}
+#contact>div{
+    display: flex;
+    flex-direction: column;
+}
+#contact>div>input,label,button,textarea{
+    display: block;
+    margin: .6rem auto;
+}
+#contact>div>form>input,textarea{
+    outline: none;
+    padding: .4rem;
+    /* border-radius: .4rem; */
+    background-color: transparent;
+    color: wheat;
+    border: none;
+    border-bottom: 2px solid wheat;
+}
+#contact>div>form>button{
+    padding: 8px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s;
+    border: 2px solid wheat;
+    color: wheat;
+    background: transparent;
+}
+
+#contact>div>form>button:hover{
+ transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.726);
+    cursor: pointer;
+    
+}
+#contact>div>form>input,textarea{
+    width: 18rem;
+}
+#contact>div>form{
+    border: 2px solid wheat;
+    background-color: rgba(19, 19, 17, 0.596);
+    margin: 3rem;
+    padding: 1rem;
+    border-radius: 3rem;
+   transition: all .4s;
+   cursor: pointer;
+   color: wheat;
+}
+#contact>div>form:hover{
+  transform: scale(1.05);
+   background: rgba(0, 0, 0, 0.932);
+}
+
+
+
+
+
+/* icon */
+#icon{
+    display: none;
+}

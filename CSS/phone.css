@@ -1,0 +1,194 @@
+@media only screen and (max-width:750px) {
+     
+  
+
+       .navbar::before{
+        content: "";
+        background: transparent;
+    }
+    .navbar{
+        position: absolute;
+        height: 0%;
+        background:  rgba(0, 0, 0, 0.6);
+    }
+
+      /* Creating icon  */
+
+
+       #icon{
+           
+           z-index: 100;
+        width: 50px;
+        height: 50px;
+        border: 2px solid white;
+        border-radius: 8px;
+        position: fixed;
+        right: 20px;
+        top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: all 1s;
+        
+    }
+    #icon span:nth-child(1){
+        display: block;
+        height: 1px;
+        width: 60%;
+        background: white;
+        transition: all 1s;
+    }
+    #icon span:nth-child(2){
+        display: block;
+        height: 1px;
+        width: 60%;
+        background: white;
+        transition: all 1s;
+    }
+    #icon span:nth-child(3){
+        display: block;
+        height: 1px;
+        width: 60%;
+        background: white;
+        transition: all 1s;
+    }
+    .content{
+        margin-right: 0;
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        transition: height 1s;
+        height: 0%;
+        z-index: 2;
+    }
+
+    .content >a{
+        display: block;
+        font-size: 30px;
+        margin: 10px;
+        color: white;
+        text-decoration: none;
+        font-family: cursive;
+        font-weight: bold;
+        transition: color 1s;
+    }
+
+    #icon:hover{
+        cursor: pointer;
+    }
+    .content a:hover{
+        color: rgb(35, 190, 74);
+    }
+
+    #clients>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+       
+    }
+    #clients>div>img{
+        margin-top: 8px;
+       width: 40px;
+       height: 40px;
+    }
+   
+    #contact>div>form{
+        border: 2px solid wheat;
+        background-color: rgba(19, 19, 17, 0.596);
+        margin: 0rem;
+        margin-top: 2rem;
+        padding: 1rem;
+        border-radius: 3rem;
+        transform: scale(.85);
+       transition: all .4s;
+       cursor: pointer;
+       color: wheat;
+    }
+    #contact>div>form:hover{
+        transform: scale(.9);
+         background: rgba(0, 0, 0, 0.932);
+      }
+      
+
+}
+
+@media screen and (max-width : 1000px){
+    #services{
+        height: 120vh;
+    }
+    #services>.box{
+       display: flex;
+       flex-direction: column;
+    }
+    .box .item{
+        width: 70vw;
+    }
+
+    .item{
+        border:2px solid rgb(214, 224, 72);
+        display: flex;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 3rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(212, 210, 189, 0.678);
+        transition: all .7s;
+        font-size: 1.0;
+    }
+    .item:hover{
+        background-color: rgb(235, 228, 168);
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+    .item>img{
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+
+    #clients>div>img{
+        margin-top: 5px;
+       width: 80px;
+       height: 80px;
+    }
+
+    #clients{
+        position: absolute;
+        top: 220vh;
+        left: 0;
+        height: 120vh;
+    }
+    #clients::before{
+        content: '';
+        background: url('/back1.jpg');
+        background-attachment: fixed;
+        background-blend-mode: difference;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 120vh;
+        opacity: .9;
+        filter: brightness(70%);
+        z-index: -1;
+    }
+    
+    #contact{
+        position: absolute;
+        top: 340vh;
+        left: 0;
+    }
+}
